@@ -1,21 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-<body>
-<!--Copyright - Asna Farid Siddiqui - Vector Tales-->
-<!--www.twitter.com/asna_farid-->
+    <br>
+    <meta charset="UTF-8">
 
-<!--Click on the magnifying glass icon to pull out -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
 
-<a href="#"></a>
-<i>Pull-Out Search Bar Concept<i>
+    
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+ <link rel="stylesheet" type="text/css" media="all" href="https://i.annihil.us/u/prod/marvel/s/css/6abc93576b334a70d02391e9514ac3f6.css" />         
+    
+    
+ <body>
+    
+
+     
+     
+        <header>
+            <div id="logo"><img src="img/tinylogo50.png" alt="Homepage"></div>
+            <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
+            <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
+        </header>
+        <nav id="main-nav" >
+            <ul>
+                <li><a href="#0">Home</a></li>
+                <li><a href="landing_fullscreen.html">About</a></li>
+                <li><a class="current" href="#0">Discover</a></li>
+                <li><a href="comic_search.html">Characters</a></li>
+                <li><a href="#0">Contact</a></li>
+            </ul>
+        </nav>
+
+    
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ajax Example</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ajax.js"></script>
+    
+/*    search bar*/
     
     
     
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('img/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
     
     
-    </body>
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+    
+    .img-circle {
+    border-radius: 50%;
+}
+	<style>
 
 
-</head>
+	</style>
+   
+        
+<h2>Search</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  
+    
+    <li><a href="#" class="header">A</a></li>
+    
+    
+
+    <a>
+    <li><img class="img-circle" src="img/standard_xlarge(5).jpg">
+    <a href="http://marvel.com/comics/characters/1010801/ant-man_scott_lang">
+    Ant Man</a></li>
+    </a>
+   
+   
+    <a>     
+    <li><img class="img-circle" src="img/standard_xlarge(25).jpg">
+    <a href="http://marvel.com/characters/68/avengers">Avengers</a></li>
+    </a>
+    
+
+    <a>
+    <li><img class="img-circle" src="img/standard_xlarge(21).jpg">
+    <a href="http://marvel.com/characters/145/ancient_one">Ancient One</a></li>
+    </a>
+    
+          
+  <li><a href="#" class="header">B</a></li>
+
+   
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(9).jpg">
+  <a href="http://marvel.com/characters/4/black_bolt">Black Bolt</a></li>
+  </a>     
+   
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(10).jpg">
+  <a href="http://marvel.com/characters/5/black_panther">Black Panther</a></li>
+  </a>
+   
+    
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(6).jpg">
+  <a href="http://marvel.com/characters/6/black_widow">Black Widow</a></li>
+  </a>
+ 
+    
+    <li><a href="#" class="header">C</a></li>
+    
+    
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(30).jpg">
+  <a href="http://marvel.com/characters/8/captain_america">Captain America</a></li>
+  </a>
+      
+    
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(20).jpg">
+  <a href="http://marvel.com/characters/9/captain_marvel">Captain Marvel</a></li>
+  </a>  
+     
+  <a>   
+  <li><img class="img-circle" src="img/standard_xlarge(23).jpg">
+  <a href="http://marvel.com/characters/10/cyclops">Cyclops</a></li>
+  </a>
+    
+  <br> 
+  
+  
+  <li><a href="#" class="header">D</a></li>
+  
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(7).jpg">
+  <a href="http://marvel.com/characters/11/daredevil">Daredevil</a></li>
+  </a>
+  
+  <a>  
+  <li><img class="img-circle" src="img/standard_xlarge(12).jpg">
+  <a href="http://marvel.com/characters/12/deadpool">Deadpool</a></li>
+  </a>
+  
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(13).jpg">
+  <a href="http://marvel.com/characters/14/doctor_strange">Doctor Strange</a></li>
+  </a>
+  
+  <br> 
+  
+  
+  <li><a href="#" class="header">E</a></li>
+  
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(15).jpg">
+  <a href="http://marvel.com/characters/594/echo">Echo</a></li>
+  </a>
+  
+    
+  <a>  
+  <li><img class="img-circle" src="img/standard_xlarge(14).jpg">
+  <a href="http://marvel.com/characters/604/electro">Electro</a></li>
+    </a>
+
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(16).jpg">
+  <a href="http://marvel.com/characters/16/elektra">Elektra</a></li>
+      </a>   
+  
+      <br>
+
+  <li><a href="#" class="header">F</a></li>
+
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(32).jpg">
+  <a href="http://marvel.com/characters/18/falcon">Falcon</a></li>
+   </a>
+
+      
+  <a>   
+  <li><img class="img-circle" src="img/standard_xlarge(29).jpg">
+  <a href="http://marvel.com/characters/69/fantastic_four">Fantastic Four</a></li>
+  </a>
+   
+  <br>
+
+  <li><a href="#" class="header">G</a></li>
+
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(18).jpg">
+  <a href="http://marvel.com/characters/751/galactus">Galactus</a></li>
+  </a>
+  
+  <a>
+  <li><img class="img-circle" src="img/standard_xlarge(19).jpg">
+  <a href="http://marvel.com/characters/19/gambit">Gambit</a></li>
+   </a>
+  
+   <a>
+   <li><img class="img-circle" src="img/standard_xlarge(4).jpg">
+   <a href="http://marvel.com/characters/20/gamora">Gamora</a></li>
+   </a>
+            
+            
+   <a>
+   <li><img class="img-circle" src="img/standard_xlarge(31).jpg">
+   <a href="http://marvel.com/characters/866/groot">Groot</a></li>
+   </a>
+
+   <a>
+   <li><img class="img-circle" src="img/standard_xlarge(26).jpg">
+   <a href="#http://marvel.com/characters/70/guardians_of_the_galaxy">Guardian of the Galaxy</a></li>
+   <a>
+
+    <br>
+    
+    <li><a href="#" class="header">H</a></li>
+   
+    <a>
+    <li><img class="img-circle" src="img/standard_xlarge(3).jpg">
+    <a href="http://marvel.com/characters/21/hank_pym">Hank Pym</a></li>
+    </a>
+  
+       
+     <a>
+     <li><img class="img-circle" src="img/standard_xlarge(1).jpg">
+     <a href="http://marvel.com/characters/23/hawkeye">Hawk Eye</a></li>
+     </a>
+       
+       
+     <a>
+     <li><img class="img-circle" src="img/standard_xlarge(2).jpg">
+     <a href="http://marvel.com/characters/25/hulk">Hulk</a></li>
+     </a>
+    
+    
+    <br>
+    </ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+
+    
+    
+</body>
 </html>

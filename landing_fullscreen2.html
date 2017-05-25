@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.container {
+			position: relative;
+			width: 50%;
+		}
+		
+		.image {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 5%;
+			width: 5%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: #ffffff;
+		}
+		
+		.container:hover .overlay {
+			opacity: 1;
+		}
+		
+		.text {
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			top: 20%;
+			left: 20%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		}
+		
+		.option1 {
+			width: 500px;
+			position: relative;
+		}
+		
+		.option1 img {
+			width: 100%;
+			height: auto;
+		}
+		
+		.option1 figcaption {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 10px;
+			background-color: transparent;
+		}
+		
+		.option2 {
+			overflow: visible;
+		}
+		
+		.option2 figcaption {
+			margin: auto 10px -100%;
+			z-index: 999;
+			bottom: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="overlay">
+			<a href="index.html"></a>
+			<img src="img/nowserving_comics.png" class="gif" />
+			<figure class="option1 option2">
+				<figcaption>
+				</figcaption>
+			</figure>
+			<center>
+				<img src="img/marvel.gif" class="gif" />
+			</center>
+		</div>
+	</div>
+</body>
+</html>
