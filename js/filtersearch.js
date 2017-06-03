@@ -1,7 +1,6 @@
 //filtersearch
 
-<script>
-    
+
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i;
@@ -20,4 +19,28 @@ function myFunction() {
         }
     }
 }
-</script>
+
+//filtering Div
+
+
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
